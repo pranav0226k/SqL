@@ -5,5 +5,7 @@ Write a solution to find the ids of products that are both low fat and recyclabl
 Code: 
 ----
 SELECT PRODUCT_ID
+
 FROM PRODUCTS
+
 WHERE LOW_FATS='Y' AND RECYCLABLE='Y';
