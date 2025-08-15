@@ -9,6 +9,16 @@ A country is big if:
 
 Write a solution to find the name, population, and area of the big countries.
 
+
+Code:
+-----
+select name, area, population
+
+from world
+
+where area >= 3000000 or population >= 25000000;
+
+
 World table:
 
 +-------------+-----------+---------+------------+--------------+
@@ -28,16 +38,6 @@ World table:
 | Angola      | Africa    | 1246700 | 20609294   | 100990000000 |
 
 +-------------+-----------+---------+------------+--------------+
-
-
-Code:
------
-select name, area, population
-
-from world
-
-where area >= 3000000 or population >= 25000000;
-
 
 Output: 
 -------
