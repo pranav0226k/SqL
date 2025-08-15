@@ -5,7 +5,16 @@ Write a solution to find all the authors that viewed at least one of their own a
 
 Return the result table sorted by id in ascending order.
 
-Input: 
+
+Code:
+----
+select distinct author_id as id
+
+from views
+
+where author_id=viewer_id
+
+order by id;
 
 Views table:
 +------------+-----------+-----------+------------+
@@ -30,18 +39,6 @@ Views table:
 | 3          | 4         | 4         | 2019-07-21 |
 
 +------------+-----------+-----------+------------+
-
-Code:
-----
-select distinct author_id as id
-
-from views
-
-where author_id=viewer_id
-
-order by id;
-
-
 
 Output: 
 
