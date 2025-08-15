@@ -16,7 +16,9 @@ where author_id=viewer_id
 
 order by id;
 
+
 Views table:
+------------
 +------------+-----------+-----------+------------+
 
 | article_id | author_id | viewer_id | view_date  |
