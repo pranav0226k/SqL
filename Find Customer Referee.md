@@ -9,6 +9,19 @@ Find the names of the customer that are either:
 
 Return the result table in any order.
 
+
+Code:
+----
+
+SELECT name
+
+FROM Customer
+
+WHERE referee_id IS NULL or referee_id != 2;
+
+---------------------------------------------
+
+
 Customer table:
 ---------------
 +----+------+------------+
@@ -30,17 +43,6 @@ Customer table:
 | 6  | Mark | 2          |
 
 +----+------+------------+
-
-Code:
-----
-
-SELECT name
-
-FROM Customer
-
-WHERE referee_id IS NULL or referee_id != 2;
-
----------------------------------------------
 
 Output: 
 ------
